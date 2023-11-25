@@ -7,8 +7,10 @@
   <title>Weather Station App</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./weather.js" defer></script>
+  <!-- Update link tag for styles.css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <!-- Update script tag for weather.js -->
+  <script src="{{ url_for('static', filename='weather.js') }}" defer></script>
 </head>
 
 <body>
